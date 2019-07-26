@@ -1,4 +1,7 @@
-﻿spring:
+﻿server:  
+  port: ${PORT:8090}
+  
+ spring:
   profiles: default
   
 ---
@@ -6,5 +9,3 @@ spring:
   profiles: docker
   zipkin:
     baseUrl: http://tracing-server:9411
-server:
-  port: 8090
