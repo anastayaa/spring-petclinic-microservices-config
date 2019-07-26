@@ -1,4 +1,6 @@
-﻿spring:
+server:
+  port: 8092
+spring:
   profiles: default
 eureka:
   instance:
@@ -10,8 +12,6 @@ spring:
   profiles: docker
   zipkin:
     baseUrl: http://tracing-server:9411
-server:
-  port: 8082
 eureka:
   client:
     serviceUrl:
