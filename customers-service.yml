@@ -3,7 +3,7 @@
 eureka:
   instance:
     # enable to register multiple app instances with a random server port
-    instance-id: ${spring.application.name}:8090
+    instance-id: ${spring.application.name}:8091
 
 ---
 spring:
