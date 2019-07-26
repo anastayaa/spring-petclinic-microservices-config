@@ -1,4 +1,7 @@
-﻿vets:
+server:
+  port: 8090
+  
+vets:
   cache:
     ttl: 60
     heap-size: 100
@@ -16,8 +19,6 @@ spring:
   profiles: docker
   zipkin:
     baseUrl: http://tracing-server:9411
-server:
-  port: 8083
 eureka:
   client:
     serviceUrl:
